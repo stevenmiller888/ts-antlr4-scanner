@@ -190,6 +190,10 @@ Returns all the input text from the current token to the end.
 scanner.tokenSubText()
 ```
 
+## Related
+
+- [ts-mysql-parser](https://github.com/stevenmiller888/ts-mysql-parser) - A standalone, grammar-complete MySQL parser.
+
 ## License
 
 [MIT](https://tldrlegal.com/license/mit-license)
