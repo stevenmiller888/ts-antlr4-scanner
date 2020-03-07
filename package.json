@@ -1,0 +1,69 @@
+{
+  "name": "ts-antlr4-scanner",
+  "version": "0.0.0",
+  "description": "A scanner for antlr-based lexers.",
+  "license": "MIT",
+  "repository": "stevenmiller888/ts-antlr4-scanner",
+  "author": "Steven Miller (https://github.com/stevenmiller888)",
+  "engines": {
+    "node": ">=12.13"
+  },
+  "keywords": [
+    "antlr4-scanner",
+    "antlr4",
+    "ts-antlr4",
+    "ts-scanner",
+    "ts-antlr",
+    "parser",
+    "antlr"
+  ],
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "pub": "np",
+    "lint": "eslint src/**/*.ts",
+    "build": "tsc",
+    "watch": "tsc -b -w",
+    "clean": "rm -rf dist"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "printWidth": 120
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{yml,md,json}": [
+      "prettier --write"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "antlr4ts": "^0.5.0-alpha.3",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "@types/node": "^13.9.0",
+    "@types/prettier": "^1.19.0",
+    "@typescript-eslint/eslint-plugin": "^2.22.0",
+    "@typescript-eslint/parser": "^2.22.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.8",
+    "np": "^6.2.0",
+    "prettier": "^1.19.1",
+    "ts-mysql-parser": "^0.0.3",
+    "ts-node": "^8.6.2"
+  }
+}
