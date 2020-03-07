@@ -1,5 +1,7 @@
 # ts-antlr4-scanner
 
+![Alt Text](https://github.com/segmentio/ts-antlr4-scanner/workflows/CI/badge.svg)
+
 > A scanner for antlr4-based lexers.
 
 ## Features
@@ -187,3 +189,13 @@ Returns all the input text from the current token to the end.
 ```typescript
 scanner.tokenSubText()
 ```
+
+## License
+
+[MIT](https://tldrlegal.com/license/mit-license)
+
+---
+
+> [stevenmiller888.github.io](https://stevenmiller888.github.io) &nbsp;&middot;&nbsp;
+> GitHub [@stevenmiller888](https://github.com/stevenmiller888) &nbsp;&middot;&nbsp;
+> Twitter [@stevenmiller888](https://twitter.com/stevenmiller888)
