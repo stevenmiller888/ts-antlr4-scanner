@@ -24,6 +24,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "pub": "np",
+    "test": "jest",
     "lint": "eslint src/**/*.ts",
     "build": "tsc",
     "watch": "tsc -b -w",
@@ -33,6 +34,14 @@
     "semi": false,
     "singleQuote": true,
     "printWidth": 120
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/dist/"
+    ],
+    "testEnvironment": "node"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
@@ -53,6 +62,7 @@
     "typescript": "^3.8.3"
   },
   "devDependencies": {
+    "@types/jest": "^25.1.4",
     "@types/node": "^13.9.0",
     "@types/prettier": "^1.19.0",
     "@typescript-eslint/eslint-plugin": "^2.22.0",
@@ -60,9 +70,11 @@
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.0",
     "husky": "^4.2.3",
+    "jest": "^25.1.0",
     "lint-staged": "^10.0.8",
     "np": "^6.2.0",
     "prettier": "^1.19.1",
+    "ts-jest": "^25.2.1",
     "ts-mysql-parser": "^0.0.3",
     "ts-node": "^8.6.2"
   }
