@@ -1,6 +1,6 @@
 {
   "name": "ts-antlr4-scanner",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A scanner for antlr-based lexers.",
   "license": "MIT",
   "repository": "stevenmiller888/ts-antlr4-scanner",
