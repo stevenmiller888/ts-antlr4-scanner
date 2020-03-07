@@ -1,6 +1,6 @@
 # ts-antlr4-scanner
 
-![Alt Text](https://github.com/segmentio/ts-antlr4-scanner/workflows/CI/badge.svg)
+![Alt Text](https://github.com/stevenmiller888/ts-antlr4-scanner/workflows/CI/badge.svg)
 
 > A scanner for antlr4-based lexers.
 
