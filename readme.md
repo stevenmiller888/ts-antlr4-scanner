@@ -4,6 +4,8 @@
 
 > A scanner for antlr4-based lexers.
 
+![Alt Text](https://github.com/stevenmiller888/ts-antlr4-scanner/raw/master/.github/code.png)
+
 ## Features
 
 - Lookahead support
