@@ -195,6 +195,8 @@ scanner.tokenSubText()
 ## Related
 
 - [ts-mysql-parser](https://github.com/stevenmiller888/ts-mysql-parser) - A standalone, grammar-complete MySQL parser
+- [ts-mysql-analyzer](https://github.com/stevenmiller888/ts-mysql-analyzer) - A MySQL query analyzer
+- [ts-mysql-schema](https://github.com/stevenmiller888/ts-mysql-schema) - A schema extractor for MySQL
 - [ts-mysql-uri](https://github.com/stevenmiller888/ts-mysql-uri) - Parse a MySQL connection URI
 
 ## License
