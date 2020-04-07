@@ -62,7 +62,7 @@ export class Scanner {
     let i = 0
     for (; i < this.tokens.length; i++) {
       const token = this.tokens[i]
-      const tokenOffset = token.tokenIndex
+      const tokenOffset = token.startIndex
       const tokenLength = token.stopIndex - token.startIndex + 1
 
       if (tokenOffset <= offset && offset < tokenOffset + tokenLength) {

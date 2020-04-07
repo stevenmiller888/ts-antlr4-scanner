@@ -53,8 +53,42 @@ describe('Scanner', () => {
   it('advances to token at position', () => {
     const tokenStream = getTokenStream()
     const scanner = new Scanner(tokenStream)
+
+    // beginning of 'SELECT'
+    scanner.advanceToPosition(0)
+    expect(scanner.tokenText()).toBe('SELECT')
+
+    // middle of 'SELECT'
+    scanner.advanceToPosition(3)
+    expect(scanner.tokenText()).toBe('SELECT')
+
+    // end of 'SELECT'
+    scanner.advanceToPosition(5)
+    expect(scanner.tokenText()).toBe('SELECT')
+
+    // ' '
+    scanner.advanceToPosition(6)
+    expect(scanner.tokenText()).toBe(' ')
+
+    // '*'
+    scanner.advanceToPosition(7)
+    expect(scanner.tokenText()).toBe('*')
+
+    // ' '
+    scanner.advanceToPosition(8)
+    expect(scanner.tokenText()).toBe(' ')
+
+    // middle of 'FROM'
     scanner.advanceToPosition(11)
-    expect(scanner.index).toBe(7)
+    expect(scanner.tokenText()).toBe('FROM')
+
+    // ' '
+    scanner.advanceToPosition(13)
+    expect(scanner.tokenText()).toBe(' ')
+
+    // middle of 'users'
+    scanner.advanceToPosition(17)
+    expect(scanner.tokenText()).toBe('users')
   })
 
   it('advances to next token by type', () => {

@@ -11,6 +11,8 @@ const scanner = new Scanner(tokenStream)
 
 // Move to character L of SELECT
 scanner.advanceToPosition(3)
+console.log(scanner.tokenText()) // SELECT
 
-const tokenText = scanner.tokenText()
-console.log(tokenText) // SELECT
+// Move to character O of FROM
+scanner.advanceToPosition(13)
+console.log(scanner.tokenText()) // FROM
